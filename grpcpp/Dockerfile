@@ -30,5 +30,5 @@ cd third_party/protobuf && \
 make -j$(nproc) && make -j$(nproc) check && make install && make clean && ldconfig && \
 echo "--- installing grpc ---" && \
 cd /var/local/git/grpc && \
-make -j$(nproc) && make install && make clean && ldconfig
-RUN cd / && rm -rf /var/local/git/grpc
+make -j$(nproc) && make install && make clean && ldconfig && \
+cd / && rm -rf /var/local/git/grpc
